@@ -33,6 +33,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 Specify the license for your project here. (e.g., MIT, Apache 2.0, etc.)
 
----
 
-> _Feel free to update this README with more information as your project evolves!_
