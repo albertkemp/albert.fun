@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Albert.fun - All my games in one place!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="description" content="A collection of games created by Albert. Play them all in one place!">
+        <meta name="keywords" content="games, albert.fun, play games, online games, fun games">
+        <meta name="author" content="Albert">
+        <meta property="og:title" content="Albert.fun - All my games in one place!">
+        <meta property="og:description" content="A collection of games created by Albert. Play them all in one place!">
+        <meta property="og:image" content="https://albert.fun/thumbnail.png">
+        <meta property="og:url" content="https://albert.fun">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Albert.fun - All my games in one place!">
+        <meta name="twitter:description" content="A collection of games created by Albert. Play them all in one place!">
+        <meta name="twitter:image" content="https://albert.fun/thumbnail.png">
+        <link rel="canonical" href="https://albert.fun">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">               
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            $(document).ready(function() {
+                AOS.init({
+                    duration: 1200,
+                    once: true
+                });
+            });
+        </script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+            }
+            h1, h2, h3 {
+                color: #2c3e50;
+            }
+            a {
+                color: #2980b9;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .game-list {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .game-item {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 15px;
+                width: calc(33.333% - 20px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                flex: 1 1  calc(33.333% - 40px);
+                transition: transform 0.2s;
+            }
+            .game-item:hover {
+                transform: translateY(-5px);
+            }
+            .game-item img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+
+
+
+            .game-item h3 {
+                margin: 10px 0;
+            }
+            .game-item p {
+                font-size: 14px;
+                color: #555;
+            }
+            .game-item a {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 8px 12px;
+                background-color: #2980b9;
+                color: #fff;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+            }
+            .game-item a:hover {
+                background-color: #1a5276;
+            }
+            @media (max-width: 768px) {
+                .game-item {
+                    width: calc(50% - 20px);
+                }
+            }
+            @media (max-width: 480px) {
+                .game-item {
+                    width: 100%;
+                }
+            }
+            .footer {
+                text-align: center;
+                margin-top: 40px;
+                padding: 20px;
+                background-color: #7fb6ec;
+                color: #fff;
+                border-radius: 8px;
+            }
+            .footer a {
+                color: #ecf0f1;
+                text-decoration: none;
+            }
+            .footer a:hover {
+                text-decoration: underline;
+            }
+            .footer p {
+                margin: 0;
+            }
+            .footer .social-icons {
+                margin-top: 10px;
+            }
+            .footer .social-icons a {
+                margin: 0 10px;
+                color: #ecf0f1;
+                font-size: 20px;
+            }
+            .footer .social-icons a:hover {
+                color: #3498db;
+            }
+            .footer .social-icons i {
+                transition: color 0.3s;
+            }
+            .footer .social-icons i:hover {
+                color: #3498db;
+            }
+            .footer .social-icons i {
+                margin: 0 10px;
+            }
+            .footer .social-icons i.fa-github {
+                color: #333;
+            }
+            .footer .social-icons i.fa-twitter {
+                color: #1da1f2;
+            }
+            .footer .social-icons i.fa-linkedin {
+                color: #0077b5;
+            }
+            .footer .social-icons i.fa-instagram {
+                color: #e1306c;
+            }
+            .footer .social-icons i.fa-facebook {
+                color: #3b5998;
+            }
+            .footer .social-icons i.fa-youtube {
+                color: #ff0000;
+            } 
+            .footer .social-icons i.fa-tiktok {
+                color: #69c9d0;
+            }
+            .footer .social-icons i.fa-discord {
+                color: #7289da;
+            }
+            .footer .social-icons i.fa-reddit {
+                color: #ff4500;
+            }
+                
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const gameItems = document.querySelectorAll(".game-item");
+                gameItems.forEach(item => {
+                    item.addEventListener("click", function() {
+                        const link = this.querySelector("a").href;
+                        window.location.href = link;
+                    });
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const gameItems = document.querySelectorAll(".game-item");
+                gameItems.forEach(item => {
+                    item.addEventListener("click", function() {
+                        const link = this.querySelector("a").href;
+                        window.location.href = link;
+                    });
+                });
+            });
+        </script>   
+    </head>
+    <body>
+        <h1>Welcome to Albert.fun!</h1>
+        <p>All my games in one place! Click on any game to start playing.</p>
+        <h2>My best games:</h2>
+        <div class="game-list">
+            
+            <div class="game-item" data-aos="fade-up">
+                <img src="JSFS1.png" alt="Game 1 Thumbnail">
+                
+                <h3>JSFS</h3>
+                <p>JSFS 2.0 is now out! The newest version with airport scenery and terrain!</p>
+                <a href="https://jsfs.netlify.app">PLAY</a>
+            </div>
+            <div class="game-item" data-aos="fade-up">
+                <img src="blockjump.png" alt="Game 2 Thumbnail">
+                <h3>Block Jump</h3>
+                <p>Challenge yourself with this simple rainbow platformer!</p>
+                <a href="https://www.khanacademy.org/computer-programming/block-jump/6049998888353792">PLAY</a>
+            </div>
+            <div class="game-item" data-aos="fade-up">
+                <img src="spaceexplorer.png" alt="Game 3 Thumbnail">
+                <h3>Space Explorer</h3>
+                <p>My space exploration game with a fully hand drawn game map!</p>
+                <a href="https://spaceexplorer1.netlify.app">PLAY</a>
+            <!-- Add more game items as needed -->
+        </div>
+            <div class="game-item" data-aos="fade-up">
+                <img src="pandalympics.png" alt="Game 4 Thumbnail">
+                <h3>Pandalympics</h3>
+                <p>A huge pixelated game map where you explore many landmarks and stories in China as a panda, all drawn by me on Pixilart </p>
+                <a href="game4.html">PLAY</a>
+            </div>
+            <div class="game-item" data-aos="fade-up">
+                <img src="avatarjump.png" alt="Game 5 Thumbnail">
+                <h3>Avatar Jump</h3>
+                <p>My first platformer, a fun little game </p>
+                <a href="https://www.khanacademy.org/computer-programming/avatar-jump-2/5264125938745344">PLAY</a>
+            </div>
+            </div>
+            <h2>Other fun little things:</h2>
+            <div class="game-list">
+
+            <div class="game-item" data-aos="fade-up">
+                
+                <h3>Image Combiner</h3>
+                <p>Combine famous people's faces with fruit...</p>
+                <a href="https://banana-news.github.io/banana/imagecombiner.html">PLAY</a>
+            </div>
+            <div class="game-item" data-aos="fade-up">
+                
+                <h3>Quadselector</h3>
+                <p>Select all the quadrilaterals with the best time possible!</p>
+                <a href="https://albertkemp.github.io/quadselector">PLAY</a>
+            </div>
+            <div class="game-item" data-aos="fade-up">
+                
+                <h3>Banana clicker</h3>
+                <p>A clicker game but with bananas</p>
+                <a href="https://banana-news.github.io/banana/potatoclicker.html">PLAY</a>
+            </div>
+            <div class="game-item" data-aos="fade-up">
+                
+                <h3>Chinese New Year 2024</h3>
+                <p>A google doodle style game</p>
+                <a href="https://albertkemp.github.io/chinese-new-year">PLAY</a>
+            </div> 
+            
+      
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 Albert.fun. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/albertkemp" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+    </body>
+</html>
